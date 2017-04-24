@@ -1,0 +1,37 @@
+{
+  "name": "quick_dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:compile": "babel lib/ -d build/",
+    "build:compress": "webpack --progress --config webpack.config.babel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snakezwb/quickDom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snakezwb/quickDom/issues"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread"
+    ]
+  },
+  "homepage": "https://github.com/snakezwb/quickDom#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^2.4.1"
+  }
+}
